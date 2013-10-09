@@ -1,3 +1,4 @@
+package com.eugenci.cross;
 import java.util.*;
 import java.io.*;
 
@@ -5,10 +6,11 @@ import java.io.*;
 // Receives input n - width of perfect cross
 // Returns a string with n*n characters where every n sequence is a
 // delimited by \n character thus representing n lines of with n.
-class PerfectCross {
+//
+public class Cross {
   private int n;
 
-  public PerfectCross(int n) {
+  public Cross(int n) {
     this.n = n;
   }  
 
@@ -37,10 +39,3 @@ class PerfectCross {
   }
 }
 
-class Cross {
-  public static void main(String[] args){
-    PerfectCross perfectCross = new PerfectCross(3);
-
-    System.out.println(perfectCross.toStr());
-  }
-}
